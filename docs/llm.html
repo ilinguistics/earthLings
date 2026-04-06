@@ -31,7 +31,23 @@
 <br>This visualizes the average perplexity for otherwise comparable test corpora from different countries. Lower values indicate a better fit. The perplexity is standardized, so that 0 is average and -1 is one standard deviation better than average. Taken from this paper <a href="https://jdunn.name/2024/03/13/pre-trained-language-models-represent-some-geographic-populations-better-than-others/">Dunn, et al. (2024). "Pre-Trained Language Models Represent Some Geographic Populations Better Than Others."</a>
 </p>
 
-<div id="map" class="d3-geomap" style="border:1px solid black;"></div>
+<div style="display:flex; gap:20px; align-items:flex-start; justify-content:center;">
+	<div id="map" class="d3-geomap" style="border:1px solid black;"></div>
+
+  <div id="info-panel" style="
+      width:250px;
+      min-height:150px;
+      border:1px solid #ccc;
+      padding:15px;
+      font-size:14px;
+      background:#f9f9f9;">
+    <strong>Country Info</strong>
+    <div id="info-content" style="margin-top:10px;">
+      Click on a country.
+    </div>
+  </div>
+
+</div>
 <div w3-include-html="/files/footer.html"></div>
 </body>
 
